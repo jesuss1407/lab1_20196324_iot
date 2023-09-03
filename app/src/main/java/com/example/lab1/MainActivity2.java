@@ -18,6 +18,8 @@ import android.widget.PopupWindow;
 import android.widget.Toast;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class MainActivity2 extends AppCompatActivity {
 
     private PopupWindow popupWindow;
@@ -25,12 +27,10 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main2);
 
 
         myDialog = new Dialog(this);
-
         getSupportActionBar().setTitle("TeleAhorcado");
 
         Button play = findViewById(R.id.button2);
@@ -40,6 +40,30 @@ public class MainActivity2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        // Obtener el TextView donde mostrar la palabra oculta
+        TextView textPalabraOculta = findViewById(R.id.textView2);
+
+        // Tu lista de palabras (puedes declararla aquí o en otro lugar)
+        String[] listaDePalabras = {"REDES", "PROPA", "PUCP", "TELITO", "TELECO","BATI"};
+
+        // Elegir una palabra al azar
+
+        Random random = new Random();
+        int indice = random.nextInt(listaDePalabras.length);
+        String palabraElegida = listaDePalabras[indice];
+
+        // Crear una cadena con guiones bajos en lugar de letras
+        StringBuilder palabraConGuiones = new StringBuilder();
+        for (int i = 0; i < palabraElegida.length(); i++) {
+            palabraConGuiones.append("_ ");
+        }
+
+        // Mostrar la palabra oculta con guiones bajos en el TextView
+        textPalabraOculta.setText(palabraConGuiones.toString());
+
+
     }
 
     @Override
