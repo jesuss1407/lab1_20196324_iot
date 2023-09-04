@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/statistics_menu"
-        android:icon="@drawable/stats"
+        android:icon="@drawable/stats1"
         android:title="statistics_menu"
         android:onClick="statsBtn"
         app:showAsAction="ifRoom" />

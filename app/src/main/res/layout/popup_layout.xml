@@ -14,65 +14,41 @@
         android:textStyle="bold"
         android:layout_gravity="end"
         android:gravity="center"/>
-    <LinearLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estadisticas"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        >
+
+        <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+            android:id="@+id/statistics"
+            android:layout_gravity="center_horizontal"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Estadisticas"
-            android:textSize="22dp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Juego1: Termino en 30 segundos"
-            android:textColor="@color/black"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Juego1: Termino en 30 segundos"
-            android:textColor="@color/black"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Juego1: Termino en 30 segundos"
-            android:textColor="@color/black"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Juego1: Termino en 30 segundos"
-            android:textColor="@color/black"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Juego1: Termino en 30 segundos"
-            android:textColor="@color/black"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Juego1: Termino en 30 segundos"
-            android:textColor="@color/black"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"/>
-    </LinearLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juego1: Termino en 30 segundos"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+
+
+    </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

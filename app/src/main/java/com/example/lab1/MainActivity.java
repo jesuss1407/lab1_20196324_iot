@@ -47,14 +47,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void rojo(MenuItem menuItem){
         colorTextView.setTextColor(Color.RED);
-        Toast.makeText(this, "Rojo", Toast.LENGTH_SHORT).show();
     }
     public void azul(MenuItem menuItem){
         colorTextView.setTextColor(Color.BLUE);
-        Toast.makeText(this, "Azul", Toast.LENGTH_SHORT).show();
     }
     public void amarillo(MenuItem menuItem){
         colorTextView.setTextColor(Color.YELLOW);
-        Toast.makeText(this, "Amarillo", Toast.LENGTH_SHORT).show();
     }
 }
